@@ -3,31 +3,31 @@ import React from 'react'
 const ContactForm = ({ image }) => {
     return (
         <div className="section max-w-[1200px]">
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-5">
                 <form className="text-center">
-                    <h2 className="text-left text-[3.125rem] mb-5">Let's Work.</h2>
+                    <h2 className="text-left text-[1.75rem] sm:text-[3.125rem] mb-5">Let's Work.</h2>
                     <div className="flex gap-x-5 mb-4">
                         <div className="flex flex-col">
-                            <label className="text-left text-[1.5rem] mb-2" htmlFor="fname">
+                            <label className="text-left sm:text-[1.5rem] mb-2" htmlFor="fname">
                                 First Name <span>*</span>
                             </label>
                             <input className="rounded bg-[#ececec] py-2 px-3 w-full leading-tight focus:outline-none focus:shadow-outline" id="fname" type="text" />
                         </div>
                         <div className="flex flex-col">
-                            <label className="text-left text-[1.5rem] mb-2" htmlFor="lname">
+                            <label className="text-left sm:text-[1.5rem] mb-2" htmlFor="lname">
                                 Last Name <span>*</span>
                             </label>
                             <input className="rounded bg-[#ececec] py-2 px-3 w-full leading-tight focus:outline-none focus:shadow-outline" id="lname" type="text" />
                         </div>
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="text-left text-[1.5rem] mb-2" htmlFor="email">
+                        <label className="text-left sm:text-[1.5rem] mb-2" htmlFor="email">
                             Email <span>*</span>
                         </label>
                         <input className="rounded bg-[#ececec] py-2 px-3 w-full leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" />
                     </div>
                     <div className="flex flex-col">
-                        <label className="text-left text-[1.5rem] mb-2" htmlFor="message">
+                        <label className="text-left sm:text-[1.5rem] mb-2" htmlFor="message">
                             Message <span>*</span>
                         </label>
                         <textarea className="rounded bg-[#ececec] py-2 px-3 w-full h-32 leading-tight focus:outline-none focus:shadow-outline" id="message" type="text" />

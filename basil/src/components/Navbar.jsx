@@ -17,7 +17,8 @@ const Navbar = () => {
         <Link to="/home"><img src={logo} alt="Basil Tweedy logo" /></Link>
         <div className="hidden md:flex gap-x-5 items-center">
             {navigation.map((item) => (
-                <NavLink to={item.path} key={item.name} className={({isActive}) => {return (isActive && "border border-black p-1")}}>{item.name}</NavLink>
+                // <NavLink to={item.path} key={item.name} className={({isActive}) => {return (isActive && "border border-black p-1")}}>{item.name}</NavLink>
+                <NavLink to={item.path} key={item.name} className={({isActive}) => {return (isActive ? "border border-black p-1" : "")}}>{item.name}</NavLink>
             ))}
         </div>
         <img src={instagram} alt="Instagram logo" className="hidden md:block"/>

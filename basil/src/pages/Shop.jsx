@@ -40,7 +40,7 @@ const Shop = () => {
         <img src={trees} alt="trees" />
         <div className="grid grid-flow-row text-left gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-8">
           {products.map((product, index) => (
-            <div onMouseEnter={() => setHover(index+1)} onMouseLeave={() => setHover(0)}>
+            <div onMouseEnter={() => setHover(index+1)} onMouseLeave={() => setHover(0)} key={index}>
               <div className="relative mb-4 w-fit">
                 <img src={product.image} alt={product.name} />
                 {hover==index+1 && <button className="absolute top-[50%] left-[50%] bg-white border-2 border-black px-[15%] py-[5%] translate-x-[-50%] translate-y-[-50%]">BUY</button>}
